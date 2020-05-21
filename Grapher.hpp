@@ -30,6 +30,15 @@ class Grapher
         //Graphs the interval of the function using evenly spaced points
         void Graph(const function<float(float)>& func, Vector2f interval, unsigned pointsCnt);
 
+        //Multiplies the scaling factor by a given factor
+        void Scale(Vector2f factor);
+
+        //Assigns the center a new value
+        void SetCenter(Vector2f center);
+
+        //Moves the center by the given delta
+        void MoveCenter(Vector2f delta);
+
     private:
 
         //Returns the pixel corresponding to the given point in real space

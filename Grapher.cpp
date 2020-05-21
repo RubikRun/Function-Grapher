@@ -44,3 +44,19 @@ Vector2f Grapher::GetPixel(Vector2f pointInR)
 
     return pointInP;
 }
+
+void Grapher::Scale(Vector2f factor)
+{
+    m_sclFtr.x *= factor.x;
+    m_sclFtr.y *= factor.y;
+}
+
+void Grapher::SetCenter(Vector2f center)
+{
+    m_center = center;
+}
+
+void Grapher::MoveCenter(Vector2f delta)
+{
+    m_center += delta;
+}
